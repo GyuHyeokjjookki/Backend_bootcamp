@@ -1,24 +1,23 @@
 package com.devfun.vo;
-
 public class MovieVO {
-    private int movie_id;
-    private String movie_name;
+    private int movieId;
+    private String movie_name; 
     private String director;
     private String type;
 
-    public int getMovie_id() {
-        return movie_id;
+    public int getMovieId() {
+        return movieId;
     }
 
-    public void setMovie_id(int movie_id) {
-        this.movie_id = movie_id;
+    public void setMovieId(int movieId) {
+        this.movieId = movieId;
     }
 
-    public String getMovie_name() {
+    public String getMovie_name() { 
         return movie_name;
     }
 
-    public void setMovie_name(String movie_name) {
+    public void setMovie_name(String movie_name) { 
         this.movie_name = movie_name;
     }
 
@@ -34,8 +33,7 @@ public class MovieVO {
         return type;
     }
 
-    public void setType(String type) {
+    public void setTypes(String type) { 
         this.type = type;
     }
 }
-
