@@ -120,4 +120,24 @@ public class StatisticServiceImpl implements StatisticService {
 
         return retVal;
     }
+    
+    @Override
+    public HashMap<String, Object> deptmonthloginNum(String month,String dept){
+        HashMap<String, Object> retVal = new HashMap<String,Object>();
+
+        try {
+            retVal = uMapper.deptMonthLogin(month,dept);
+            retVal.put("month", month);
+            retVal.put("dept", dept);
+            retVal.put("is_success", true);
+
+        }catch(Exception e) {
+            retVal.put("totCnt", -999);
+            retVal.put("month", month);
+            retVal.put("dept", dept);
+            retVal.put("is_success", false);
+        }
+
+        return retVal;
+    }
 }
