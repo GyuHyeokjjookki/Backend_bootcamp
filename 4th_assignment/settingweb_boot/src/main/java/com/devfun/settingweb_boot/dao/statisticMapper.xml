@@ -45,9 +45,9 @@
 
     <select id="deptlongincnt" parameterType="string" resultType="hashMap">
         select count(*) as dayCnt
-        from statistc.requestinfo ri, statistc.departments d
+        from statistc.requestinfo ri, statistc.departments dp
         where substring(ri.createDate, 3,2) = #{month}
-        group by deptID;
+        and dp.deptID = #{dept);
     </select>
 
 </mapper>

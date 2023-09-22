@@ -10,4 +10,5 @@ public interface  StatisticMapper {
     public HashMap<String, Object> selectAllMonthLogin();
     public HashMap<String, Object> averageDayLogin(String day);
     public HashMap<String, Object> exceptHoliday(String year);
+    public HashMap<String, Object> deptMonthLogin(String month, String dept);
 }
