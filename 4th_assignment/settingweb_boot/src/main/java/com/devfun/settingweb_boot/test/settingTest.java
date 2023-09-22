@@ -60,6 +60,13 @@ public class settingTest {
         return service.exceptholidayNum(year);
     }
     
+    @ResponseBody
+    @RequestMapping("/sqldeptLoginStatistic")
+    public Map<String, Object> sqltest_dept(String month, String dept) throws Exception{
+        return service.deptmonthloginNum(month,dept);
+    }
+    
+    
     @RequestMapping("/test") 
     public ModelAndView test() throws Exception{ 
         ModelAndView mav = new ModelAndView("test"); 
